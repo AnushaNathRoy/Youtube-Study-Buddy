@@ -1,7 +1,9 @@
 # libraries and import
 import json
 from youtube_transcript_api import YouTubeTranscriptApi
+import csv
 from urllib.parse import urlparse
+from fuzzywuzzy import fuzz
 import urllib.parse
 import pandas as pd
 
@@ -9,14 +11,16 @@ import pandas as pd
 video_url=input("Enter Youtube Video URL: ")
 search_query = input("Enter what you want to search: ")
 
-#gets a list of words that need to be searched
-search_words=[]
-search_words = search_query.split(" ")
-print(search_words)
-
 video_url=urlparse(video_url)
 query_data = urllib.parse.parse_qs(video_url.query)
+site = video_url.netloc
+if(site!="www.youtube.com"):
+	print("Please Enter a Valid Youtube URL")
+	exit()
 youtube_id = query_data['v'][0]
+
+search_words = []
+search_words = search_query.split(" ")
 
 transcript = YouTubeTranscriptApi.get_transcript(youtube_id)
 transcript_search_data=[]
@@ -25,9 +29,31 @@ transcript_line=""
 for line in transcript:
 	transcript_line+=line['text'].replace("\n","")
 	transcript_text+=transcript_line
+	rank = fuzz.partial_ratio(search_query.lower(),transcript_line.lower())
 	for word in search_words:
-		print("")
+		if (transcript_line.find(word) != -1):
+			rank+=50
+	line['rank'] = rank
 
+with open ('transcript_csv.csv','w') as w:
+	fieldnames = transcript[0].keys()
+	wwrite = csv.DictWriter(w,fieldnames=fieldnames)
+	wwrite.writeheader()
+	wwrite.writerows(transcript)
 
-print(transcript_text)
+csv_data = pd.read_csv("transcript_csv.csv")
+sorted_csv_data = csv_data.sort_values(by=["rank"], ascending=False)
+sorted_csv_data.to_csv("transcript_sorted.csv",index=False)
+
+print(transcript_text)>transcript.txt
 # https://www.youtube.com/watch?v=I4pQbo5MQOs
+
+'''
+
+requirements:
+pip install python-Levenshtein
+pip install fuzzywuzzy
+pip install youtube_transcript_api
+pip install pandas
+
+'''
