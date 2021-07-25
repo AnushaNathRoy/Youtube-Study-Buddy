@@ -18,10 +18,41 @@
     <label for="url">
     Enter Valid Youtube URL:</label>
     <input type="text" name="url" class="form-control" id="url"  placeholder="Enter URL">
+    <br>
+    <label for="search">
+    Search in Video:</label>
+    <input type="text" name="search" class="form-control" id="search"  placeholder="Enter Search Query">
   </div>
   <button type="submit" class="btn btn-primary">Transcript</button>
 </form>
 </div>
+
+{% if video_urlp %}
+ <div class = "container center" style="margin: 2%; padding:20%; padding-top: 0%; padding-bottom: 2%"> 
+ 	<div id="player" class="center"></div>
+ </div>
+{% endif %}
+
+ <script type="text/javascript">
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '{{video_urlp}}',
+          playerVars: {
+            'playsinline': 1
+          }
+        });
+      }
+
+</script>
+
  {% if transcript_content %}
 <h5> Transcript: </h5>
 <div class="container card" style="height: 400px; overflow: scroll;">
@@ -29,7 +60,55 @@
         {{transcript_content}}
 </div>
 </div>
+
+<br>
+<br>
+
+<h5> Time-Stamps: </h5>
+<div class="container card" style="height: 400px; overflow: scroll;">
+<table class="table-striped">
+	<thead>
+		<th> Time-Stamp </th>
+		<th> Transcript </th>
+	</thead>
+	{% for line in transcript_data %}
+	<tr>
+		<td> {{line["start"]}} </td>
+		<td> {{line["text"]}} </td>
+	</tr>
+	{% endfor %}
+	<tbody>
+
+	</tbody>
+       
+ </table>
+</div>
+
+<br>
+<br>
+
+ <h5> Searched Time-Stamps: </h5>
+<div class="container card" style="height: 400px; overflow: scroll;">
+<table class="table-striped">
+	<thead>
+		<th> Time-Stamp </th>
+		<th> Transcript </th>
+	</thead>
+	{% for line in transcript_datas %}
+	<tr>
+		<td> {{line["start"]}} </td>
+		<td> {{line["text"]}} </td>
+	</tr>
+	{% endfor %}
+	<tbody>
+
+	</tbody>
+       
+ </table>
+
+</div>
 {% endif %}
+
 
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

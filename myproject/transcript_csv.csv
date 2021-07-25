@@ -1,0 +1,142 @@
+text,start,duration,rank
+"Consider the following sentence:
+“This statement is false.”",0:00:06,3.958,65
+Is that true?,0:00:10,1.292,65
+"If so, that would make
+this statement false.",0:00:12,2.375,65
+"But if it’s false, then the statement 
+is true.",0:00:14,2.291,65
+"By referring to itself directly, this 
+statement creates an unresolvable paradox.",0:00:16,5.292,65
+"So if it’s not true and it’s not false—
+what is it?",0:00:22,3.667,65
+"This question might seem 
+like a silly thought experiment.",0:00:26,2.875,65
+"But in the early 20th century,
+it led Austrian logician Kurt Gödel",0:00:29,4.666,65
+"to a discovery that would change
+mathematics forever.",0:00:33,3.417,65
+"Gödel’s discovery had to do with 
+the limitations of mathematical proofs.",0:00:37,4.541,65
+"A proof is a logical argument
+that demonstrates",0:00:42,3.166,65
+why a statement about numbers is true.,0:00:45,2.5,65
+"The building blocks of these arguments
+are called axioms—",0:00:48,3.333,65
+"undeniable statements 
+about the numbers involved.",0:00:51,2.709,115
+"Every system built on mathematics,",0:00:54,2.291,115
+"from the most complex proof 
+to basic arithmetic,",0:00:57,3.042,115
+is constructed from axioms.,0:01:00,2.125,115
+"And if a statement about numbers is true,",0:01:02,2.75,115
+"mathematicians should be able to confirm
+it with an axiomatic proof.",0:01:05,4.584,115
+"Since ancient Greece, 
+mathematicians used this system",0:01:10,3.208,115
+"to prove or disprove mathematical claims
+with total certainty.",0:01:13,4.208,115
+"But when Gödel entered the field,",0:01:18,1.917,115
+"some newly uncovered logical paradoxes
+were threatening that certainty.",0:01:20,4.75,115
+"Prominent mathematicians were eager
+to prove",0:01:26,2.625,115
+that mathematics had no contradictions.,0:01:28,2.542,115
+Gödel himself wasn’t so sure.,0:01:31,2.375,115
+"And he was even less confident
+that mathematics was the right tool",0:01:33,4.25,115
+to investigate this problem.,0:01:38,1.917,115
+"While it’s relatively easy to create 
+a self-referential paradox with words,",0:01:40,4.833,115
+"numbers don't typically
+talk about themselves.",0:01:45,3.25,115
+"A mathematical statement is simply 
+true or false.",0:01:48,3.209,115
+But Gödel had an idea.,0:01:52,1.541,115
+"First, he translated mathematical 
+statements and equations into code numbers",0:01:54,4.833,115
+"so that a complex mathematical idea could
+be expressed in a single number.",0:01:58,4.292,115
+"This meant that mathematical statements
+written with those numbers",0:02:03,3.583,115
+"were also expressing something about 
+the encoded statements of mathematics.",0:02:07,4.459,115
+"In this way, the coding allowed
+mathematics to talk about itself.",0:02:12,4.125,115
+"Through this method, he was able to write:",0:02:16,2.542,115
+"“This statement cannot be proved” 
+as an equation,",0:02:19,3.458,115
+"creating the first self-referential
+mathematical statement.",0:02:22,3.75,141
+"However, unlike the ambiguous
+sentence that inspired him,",0:02:27,3.5,115
+"mathematical statements must be 
+true or false.",0:02:30,3.458,115
+So which is it?,0:02:34,1.5,115
+"If it’s false, that means the statement
+does have a proof.",0:02:36,3.542,115
+"But if a mathematical statement has
+a proof, then it must be true.",0:02:39,3.958,115
+"This contradiction means that Gödel’s
+statement can’t be false,",0:02:44,4.166,115
+"and therefore it must be true that
+“this statement cannot be proved.”",0:02:48,4.875,115
+"Yet this result is even more surprising,",0:02:54,2.584,115
+"because it means we now have 
+a true equation of mathematics",0:02:56,4.083,115
+that asserts it cannot be proved.,0:03:00,2.667,115
+"This revelation is at the heart 
+of Gödel’s Incompleteness Theorem,",0:03:04,4.75,115
+"which introduces an entirely new class 
+of mathematical statement.",0:03:08,4.25,141
+"In Gödel’s paradigm, statements still 
+are either true or false,",0:03:13,4.375,115
+"but true statements can either be
+provable or unprovable",0:03:17,4.542,115
+within a given set of axioms.,0:03:22,2.375,115
+"Furthermore, Gödel argues these 
+unprovable true statements",0:03:24,4.708,115
+exist in every axiomatic system.,0:03:29,2.917,115
+This makes it impossible to create,0:03:32,2.208,115
+"a perfectly complete system 
+using mathematics,",0:03:34,3.333,115
+"because there will always be true
+statements we cannot prove.",0:03:38,4.042,115
+"Even if you account for these
+unprovable statements",0:03:42,2.667,115
+"by adding them as new axioms 
+to an enlarged mathematical system,",0:03:45,4.042,120
+"that very process introduces new
+unprovably true statements.",0:03:49,5.0,115
+"No matter how many axioms you add,",0:03:55,2.292,115
+"there will always be unprovably true 
+statements in your system.",0:03:57,4.041,115
+It’s Gödels all the way down!,0:04:01,2.167,115
+"This revelation rocked the foundations 
+of the field,",0:04:04,3.041,115
+"crushing those who dreamed that every
+mathematical claim would one day",0:04:07,4.125,115
+be proven or disproven.,0:04:11,2.0,115
+"While most mathematicians accepted this 
+new reality, some fervently debated it.",0:04:13,4.916,115
+"Others still tried to ignore 
+the newly uncovered a hole",0:04:18,3.542,115
+in the heart of their field.,0:04:22,1.875,115
+"But as more classical problems were proven
+to be unprovably true,",0:04:24,4.417,115
+"some began to worry their life's work
+would be impossible to complete.",0:04:28,4.625,115
+"Still, Gödel’s theorem opened 
+as many doors as a closed.",0:04:33,3.833,115
+Knowledge of unprovably true statements,0:04:37,2.625,115
+"inspired key innovations 
+in early computers.",0:04:39,3.208,115
+"And today, some mathematicians dedicate
+their careers",0:04:43,3.084,115
+"to identifying provably 
+unprovable statements.",0:04:46,3.166,115
+"So while mathematicians may have 
+lost some certainty,",0:04:49,3.083,115
+"thanks to Gödel they can embrace 
+the unknown",0:04:52,2.792,115
+at the heart of any quest for truth.,0:04:55,2.417,115
