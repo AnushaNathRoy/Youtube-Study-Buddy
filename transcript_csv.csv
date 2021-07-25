@@ -1,41 +1,142 @@
 text,start,duration,rank
-paw patrol is on a roll,0.16,3.84,36
-when all hope seems lost,7.68,4.16,27
-when heroes are needed more than,12.0,6.64,45
-ever our,15.36,6.4,36
-fate is in there,18.64,6.16,45
-pause a dog actually sir,21.76,5.759,45
-i'm a puppy that's even worse you're in,24.8,4.08,45
-shock so i'm not gonna take that,27.519,3.361,45
-personally this summer,28.88,4.8,45
-another perfect rescue the worldwide,30.88,4.32,45
-phenomenon,33.68,5.68,45
-will be unleashed on the big screen,35.2,6.32,45
-paw patrol what's your emergency my name,39.36,3.84,45
-is liberty we need your help,41.52,3.28,45
-humdinger he's going to destroy,43.2,3.28,45
-adventure city,44.8,4.09,45
-come on pups adventure city's in trouble,46.48,5.2,45
-[Music],48.89,5.829,45
-welcome to our new headquarters,51.68,6.16,91
-this is so cool there's even a new and,54.719,6.881,91
-improved pup treat dispenser,57.84,3.76,91
-what it's a beautiful thing,64.08,7.12,91
-no dog by order of the new mayor,68.08,5.6,91
-he's more of a cat person ladies and,71.2,3.279,91
-gentlemen,73.68,2.88,91
-and most importantly influencers with,74.479,3.631,91
-over 10 000 followers,76.56,4.629,91
-[Music],78.11,3.079,91
-we've got to rescue those people let's,82.24,4.4,91
-get to work,83.84,6.16,91
-paw patrol is on a roll are you,86.64,7.2,91
-kidding me i got this get out of the way,90.0,6.4,91
-move you got to know how to talk to,93.84,3.279,91
-people,96.4,1.47,91
-now go,97.119,6.59,91
-[Music],97.87,5.839,91
-no pups too small,111.119,10.391,91
-[Music],114.9,6.61,91
-yikes,126.84,3.0,91
-you,130.479,2.081,91
+"Consider the following sentence:
+“This statement is false.”",6.913,3.958,65
+Is that true?,10.871,1.292,65
+"If so, that would make
+this statement false.",12.163,2.375,70
+"But if it’s false, then the statement 
+is true.",14.538,2.291,65
+"By referring to itself directly, this 
+statement creates an unresolvable paradox.",16.829,5.292,65
+"So if it’s not true and it’s not false—
+what is it?",22.121,3.667,65
+"This question might seem 
+like a silly thought experiment.",26.288,2.875,65
+"But in the early 20th century,
+it led Austrian logician Kurt Gödel",29.163,4.666,65
+"to a discovery that would change
+mathematics forever.",33.829,3.417,65
+"Gödel’s discovery had to do with 
+the limitations of mathematical proofs.",37.746,4.541,65
+"A proof is a logical argument
+that demonstrates",42.496,3.166,65
+why a statement about numbers is true.,45.662,2.5,65
+"The building blocks of these arguments
+are called axioms—",48.579,3.333,65
+"undeniable statements 
+about the numbers involved.",51.912,2.709,115
+"Every system built on mathematics,",54.996,2.291,115
+"from the most complex proof 
+to basic arithmetic,",57.287,3.042,115
+is constructed from axioms.,60.329,2.125,115
+"And if a statement about numbers is true,",62.954,2.75,115
+"mathematicians should be able to confirm
+it with an axiomatic proof.",65.704,4.584,115
+"Since ancient Greece, 
+mathematicians used this system",70.788,3.208,115
+"to prove or disprove mathematical claims
+with total certainty.",73.996,4.208,115
+"But when Gödel entered the field,",78.496,1.917,115
+"some newly uncovered logical paradoxes
+were threatening that certainty.",80.413,4.75,115
+"Prominent mathematicians were eager
+to prove",86.121,2.625,115
+that mathematics had no contradictions.,88.746,2.542,115
+Gödel himself wasn’t so sure.,91.496,2.375,115
+"And he was even less confident
+that mathematics was the right tool",93.871,4.25,115
+to investigate this problem.,98.121,1.917,115
+"While it’s relatively easy to create 
+a self-referential paradox with words,",100.413,4.833,115
+"numbers don't typically
+talk about themselves.",105.246,3.25,115
+"A mathematical statement is simply 
+true or false.",108.829,3.209,115
+But Gödel had an idea.,112.038,1.541,115
+"First, he translated mathematical 
+statements and equations into code numbers",114.038,4.833,115
+"so that a complex mathematical idea could
+be expressed in a single number.",118.871,4.292,115
+"This meant that mathematical statements
+written with those numbers",123.621,3.583,115
+"were also expressing something about 
+the encoded statements of mathematics.",127.204,4.459,115
+"In this way, the coding allowed
+mathematics to talk about itself.",132.288,4.125,115
+"Through this method, he was able to write:",136.746,2.542,115
+"“This statement cannot be proved” 
+as an equation,",139.288,3.458,115
+"creating the first self-referential
+mathematical statement.",142.746,3.75,141
+"However, unlike the ambiguous
+sentence that inspired him,",147.413,3.5,115
+"mathematical statements must be 
+true or false.",150.913,3.458,115
+So which is it?,154.579,1.5,115
+"If it’s false, that means the statement
+does have a proof.",156.371,3.542,115
+"But if a mathematical statement has
+a proof, then it must be true.",159.913,3.958,115
+"This contradiction means that Gödel’s
+statement can’t be false,",164.413,4.166,115
+"and therefore it must be true that
+“this statement cannot be proved.”",168.579,4.875,115
+"Yet this result is even more surprising,",174.329,2.584,115
+"because it means we now have 
+a true equation of mathematics",176.913,4.083,115
+that asserts it cannot be proved.,180.996,2.667,115
+"This revelation is at the heart 
+of Gödel’s Incompleteness Theorem,",184.121,4.75,115
+"which introduces an entirely new class 
+of mathematical statement.",188.871,4.25,141
+"In Gödel’s paradigm, statements still 
+are either true or false,",193.121,4.375,115
+"but true statements can either be
+provable or unprovable",197.621,4.542,115
+within a given set of axioms.,202.163,2.375,115
+"Furthermore, Gödel argues these 
+unprovable true statements",204.746,4.708,115
+exist in every axiomatic system.,209.454,2.917,115
+This makes it impossible to create,212.788,2.208,115
+"a perfectly complete system 
+using mathematics,",214.996,3.333,115
+"because there will always be true
+statements we cannot prove.",218.329,4.042,115
+"Even if you account for these
+unprovable statements",222.704,2.667,115
+"by adding them as new axioms 
+to an enlarged mathematical system,",225.371,4.042,120
+"that very process introduces new
+unprovably true statements.",229.704,5.0,115
+"No matter how many axioms you add,",235.121,2.292,115
+"there will always be unprovably true 
+statements in your system.",237.413,4.041,115
+It’s Gödels all the way down!,241.454,2.167,115
+"This revelation rocked the foundations 
+of the field,",244.163,3.041,115
+"crushing those who dreamed that every
+mathematical claim would one day",247.204,4.125,115
+be proven or disproven.,251.329,2.0,115
+"While most mathematicians accepted this 
+new reality, some fervently debated it.",253.788,4.916,115
+"Others still tried to ignore 
+the newly uncovered a hole",258.954,3.542,115
+in the heart of their field.,262.496,1.875,115
+"But as more classical problems were proven
+to be unprovably true,",264.371,4.417,115
+"some began to worry their life's work
+would be impossible to complete.",268.788,4.625,115
+"Still, Gödel’s theorem opened 
+as many doors as a closed.",273.413,3.833,115
+Knowledge of unprovably true statements,277.246,2.625,115
+"inspired key innovations 
+in early computers.",279.871,3.208,115
+"And today, some mathematicians dedicate
+their careers",283.329,3.084,115
+"to identifying provably 
+unprovable statements.",286.413,3.166,115
+"So while mathematicians may have 
+lost some certainty,",289.871,3.083,115
+"thanks to Gödel they can embrace 
+the unknown",292.954,2.792,115
+at the heart of any quest for truth.,295.746,2.417,115

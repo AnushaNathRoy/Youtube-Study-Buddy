@@ -1,5 +1,6 @@
 # libraries and import
 import json
+import json
 from youtube_transcript_api import YouTubeTranscriptApi
 import csv
 from urllib.parse import urlparse
@@ -10,6 +11,7 @@ import pandas as pd
 #recieves video_url and search query 
 video_url=input("Enter Youtube Video URL: ")
 search_query = input("Enter what you want to search: ")
+
 
 video_url=urlparse(video_url)
 query_data = urllib.parse.parse_qs(video_url.query)
@@ -45,7 +47,9 @@ csv_data = pd.read_csv("transcript_csv.csv")
 sorted_csv_data = csv_data.sort_values(by=["rank"], ascending=False)
 sorted_csv_data.to_csv("transcript_sorted.csv",index=False)
 
-print(transcript_text)>transcript.txt
+ch = input("Do you want to print the transcript?(Y/N)")
+if(ch=='Y' or ch =='y'):
+	print(transcript_text)
 # https://www.youtube.com/watch?v=I4pQbo5MQOs
 
 '''
