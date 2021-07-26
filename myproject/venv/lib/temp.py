@@ -24,7 +24,7 @@ def response():
 		query_data = urllib.parse.parse_qs(video_url.query)
 		site = video_url.netloc
 		if(site!="www.youtube.com"):
-			return "Please Enter a Valid Youtube URL"
+			return "Please Enter a Valid Youtube URL. Reload the page again."
 		youtube_id = query_data['v'][0]
 
 		search_query = request.form.get("search")
