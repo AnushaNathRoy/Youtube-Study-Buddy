@@ -54,6 +54,8 @@ Enter search query to search in the video. It can be entered later too.
 *Transcript Not Available :(( Sorry Try Some Other Video.* => Sorry, the transcript is not available for the video entered in this case. You can always enter another video,  
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/mainmenu.png)
+---
+
 
 #### Navbar Options
 **Home button** - Allows you to navigate back to homepage.
@@ -62,6 +64,7 @@ Enter search query to search in the video. It can be entered later too.
 **Search** - This allows you to search for any content in transcript and provides a list of relevant searches. You don't need to type the exact sentence, the search feauture will take care of it and give you all the relevant choices.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/navbar.png)
+---
 
 #### Study Mode
 **Highlight Mode** - It is a toggle button. On switching on the toggle button you will be given an option to enter the hex code of the highlight color that you like. Not entering a hex value will use the default yellow highlight.
@@ -71,6 +74,8 @@ Enter search query to search in the video. It can be entered later too.
 **Download Notes (MarkDown)** - This will download a markdown of the notes you made.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/studymode.png)
+---
+
 #### Notes Editor
 
 You can use this to make and edit your notes while studying. The are options to make tables, bold and highlight text and many more!
