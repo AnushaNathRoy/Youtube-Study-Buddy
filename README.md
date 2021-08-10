@@ -12,7 +12,7 @@ The app is your perfect companion while you binge youtube videos to study and re
 
 ## Installation
 
-###### The app is now available and can be used at:
+###### The app is available and can be used at:
 https://youtube-study-buddy.herokuapp.com/
 
 ###### Local Installation:
