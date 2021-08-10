@@ -76,7 +76,7 @@ You can use this to make and edit your notes while studying. The are options to 
 MIT
 
 **References:**
-   [video in demo]:   <https://www.youtube.com/watch?v=yOgAbKJGrTA>
-   [video in demo]: <https://www.youtube.com/watch?v=I4pQbo5MQOs>
+- [video in demo]:   <https://www.youtube.com/watch?v=yOgAbKJGrTA>
+- [video in demo]: <https://www.youtube.com/watch?v=I4pQbo5MQOs>
    
  
