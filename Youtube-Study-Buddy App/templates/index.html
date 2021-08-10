@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/xicon" href="{{ url_for('static_load', filename= 'YSB.png')}}">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link
+  href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static_load', filename= 'styles.css') }}?v={{version}}}">
+    <script src="https://cdn.tiny.cloud/1/e74q86mcgsrq1hob85gpltnxuvuxuqpv88i07p1f3ile7sfd/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <script>
+    tinymce.init({
+	  selector: '#notes',
+	  plugins: 'autolink lists media table',
+      toolbar: 'showcomments casechange code table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      setup: function (editor) {
+      editor.on('init', function (e) {
+      	setc = localStorage.getItem('StoredNotes');
+        editor.setContent(setc);
+      });
+  	 }
+	});
+    </script>
+    <!-- title -->
+     <title>Youtube Study Buddy</title>
+       <!-- By Anusha Nath Roy -->
+
+</head>
+
+<!-- Main Page  -->
+{%if not video_urlp %}
+<div class="container">
+	<div class ="container" style="width: auto; display: flex; justify-content: center"> 
+		<img src="{{ url_for('static_load', filename= 'YSB.gif') }}"type="video/mp4" style="height:250px">
+		<br>
+	
+</div>
+	<div class="typewriter">
+			YOUTUBE STUDY BUDDY
+	</div>
+</div>
+{% endif %}
+<br>
+{% if m %}
+<body style="margin: 2%">
+<div class="container menu" style="padding:5%">
+<form method="POST" action="/response">
+  <div class="form-group">
+    <label for="url">
+    Enter Valid Youtube URL:</label>
+    <input type="text" name="url" class="form-control" id="url"  placeholder="https://www.youtube.com/..." required>
+    <br>
+    <label for="search">
+    Search in Video:</label>
+    <input type="text" name="search" class="form-control" id="search"  placeholder="Enter Search Query ( You can search later too dw <3 )">
+  </div>
+  <div class= " col text-center">
+  <button type="submit" class="btn center" style="background-color: #add8e6;font-size:20px; font-color: black; border: none">
+  Let's Study :)
+   </button>
+  {% endif %}
+
+
+<!-- response page -->
+{% if not m %}
+<nav class="navbar">
+	<div class="navbar-collapse container-fluid">
+	<ul class="navbar-nav" style="flex-direction: row">
+		<li class="nav-item active" style="width: 10%">
+		<a class="nav-item" href="/"> <img src="{{url_for('static_load', filename = 'YSB.png')}}" style="width: 100%"></a>
+	    </li>
+
+		</li>
+		<li class="nav-item active" style="margin: 2%">
+			<button class="btn btn-outline-dark btn-lg" onclick="window.location.href='/'">
+				<span class="bi-house">
+					
+				</span>
+				<span> Home</span>
+			</button>
+			
+		</li>
+
+		<li class="nav-item active" style="margin: 2%">
+			<button id="transcriptbtn" class="btn btn-outline-dark btn-lg">
+			<span class="bi-journal-bookmark"></span>
+			<span> Transcript </span>
+			</button>
+
+		<li class="nav-item active" style="margin: 2%">
+			<button id="timetranscriptbtn"class="btn btn-outline-dark btn-lg">
+				<span class="bi-bookmark"></span>
+				<span> Time-Stamped Transcript</span>
+			</button>
+		</li>
+<li class="nav-item active" style="margin:2%">
+  <form class="form-inline" method="POST" action="/response">
+  <div class="form-group">
+    <input type="hidden" name="url" class="form-control" id="url" value="{{urlv}}">
+    <input type="text" name="search" class="form-control" id="search"  placeholder="Enter Search Query" style="display: inline-block;">
+  </div>
+  <div class= "col text-center">
+  <button type="submit" class="btn btn-lg btn-outline-dark" style=" display: inline-block;">
+  	<span class="bi-search"></span>
+   Search
+   </button>
+</div>
+	 </form>
+</li>
+	</ul>
+	</div>
+	
+</nav>
+{% endif %}
+<!-- displaying video  -->
+{% if video_urlp %}
+<div style="display: flex">
+ <div class = "col-md-8 col-xs-12" style="margin: 0; padding:2%; padding-top:0%; padding-bottom: 0%; display: inline-block;"> 
+ 	<div id="player" class="center"></div>
+ </div>
+{% endif %}
+
+ <script type="text/javascript">
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: '{{video_urlp}}',
+          playerVars: {
+            'playsinline': 1
+          },
+          events:{
+          	'onReady': function(e){
+          		e.target.setPlaybackRate(3);
+          		console.log(e.target.getPlaybackRate());
+          	}
+          },
+        });
+      };
+
+
+</script>
+
+<!-- Transcript Display-->
+ {% if transcript_content %}
+ <div id="t" class="col-md-4 col-xs-12" style="display:none; margin:0">
+
+<div class="container card" style="height: 400px; overflow: scroll;">
+<br>
+<h5> Transcript: </h5>
+<div class="container card-body" style="box-shadow: grey; text-align: justify; ">
+        {{transcript_content}}
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<!-- Displays Time-Stamped Transcript -->
+<div id="tt" class="col-md-4 col-xs-1" style="display:none; margin:0">
+<div class="container card" style="height: 400px; overflow: scroll;">
+<table class="table-striped table-hover">
+	<thead>
+		<th> Time </th>
+		<th> Transcript </th>
+	</thead>
+	{% for line in transcript_data %}
+	<tr >
+		<td> {{line["start"]}} </td>
+		<td style="padding: 5%"> {{line["text"]}} </td>
+	</tr>
+	{% endfor %}
+	<tbody>
+
+	</tbody>
+       
+ </table>
+</div>
+</div>
+
+<!-- Display Time-Stamps based on Search Query -->
+<div id="stt" class="col-md-4 col-xs-12" style="display: inline-block; margin:0">
+ <h5> Searched Time-Stamps: </h5>
+<div class="container card" style="height: 400px; overflow: scroll;">
+<table class="table-striped table-hover">
+	<thead>
+		<th> Time </th>
+		<th> Transcript </th>
+	</thead>
+	{% for line in transcript_datas %}
+	<tr>
+		<td> {{line["start"]}} </td>
+		<td style="padding: 5%"> {{line["text"]}} </td>
+	</tr>
+	{% endfor %}
+	<tbody>
+
+	</tbody>
+       
+ </table>
+
+</div>
+</div>
+</div>
+
+{% endif %}
+
+{% if invalid %}
+    <div class="text-center">
+    	Invalid Link! Please try again!
+    </div>
+{% endif %}
+
+{% if linvalid %}
+<div class="text-center">
+	Transcript Not Available :(( Sorry Try Some Other Video.
+</div>
+{% endif %}
+
+</div>
+</form>
+</div>
+
+{% if transcript_content %}
+<div class="container" style="margin-top:2%; margin:1%;">
+<input id="chkSwitch" type="checkbox" data-onlabel=" Highlighting " data-offlabel=" HighlightMode " style="margin: 2%" data-toggle="switchbutton" />
+<button class="btn btn-outline-dark" id="addhighlightedpart" id="varshu<3" style="margin: 2%"> Get Highlighted Text</button>
+<button class="btn btn-outline-dark" id="save" style="margin: 2%"> Save Notes </button>
+
+<button class="btn btn-outline-dark" id="new" style="margin: 2%"> New Note </button>
+
+<button class="btn btn-outline-dark" id="download" style="margin: 2%"> Download Notes (MarkDown)</button>
+</div>
+
+
+
+<div style="margin: 2%">
+	<h4 align="center">. <   Notes  > .</h4>
+	<br>
+	<form method="post">
+		<textarea id="notes"> Enter Notes Here. You can choose to add the highlighted text to your notes too! :)
+		</textarea>
+	</form>
+</div>
+{% endif %}
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+<!-- Script to play video at the clicked time-stamp -->
+ <script>
+
+	
+	$("table tr").click(function(){
+		time = $(this).find('td:first').html();
+		time_data=time.split(":");
+		seconds_data = parseInt((parseInt(time_data[0])*3600) + (parseInt(time_data[1])*60) + (parseInt(time_data[2])));
+		$('html,body').animate({
+			scrollTop: $("#player").offset().top
+		},1500);
+		player.pauseVideo();
+		player.seekTo(seconds_data,false);
+		
+		player.loadVideoById('{{video_urlp}}',seconds_data);
+		player.playVideo();
+
+
+	});
+
+	$(document).ready(function(){
+		$("#transcriptbtn").click(function(){
+			$("#t").show();
+			$("#tt").hide();
+			$("#stt").hide();
+		})
+	});
+
+	$(document).ready(function(){
+		$("#timetranscriptbtn").click(function(){
+			$("#t").hide();
+			$("#tt").show();
+			$("#stt").hide();
+
+		})
+	});
+
+	var color;
+
+	$(document).ready(function(){
+		$("#chkSwitch").change(function(){
+			console.log("change")
+			if($("#chkSwitch").prop('checked')){
+				colorn = prompt("Enter Highlighting Hex Code:");
+				if(colorn != null)
+					color = colorn;
+			}
+		})
+	});
+
+	$("#t").mouseup(function(){
+				console.log("h111")
+				if($("#chkSwitch").prop('checked')){
+					console.log("h11111")
+					var selected_textr;
+					var selected_text=window.getSelection && window.getSelection();
+					if (selected_text && selected_text.rangeCount>0)
+						var selected_textr = selected_text.getRangeAt(0);
+					var newm = document.createElement("mark");
+					newm.setAttribute(
+						"style",
+						"background-color: yellow; color: black;"
+					);
+					newm.style.background = color;
+					newm.className = "highlightedtext";
+					selected_textr.surroundContents(newm);
+				}
+			});
+
+	$("#tt").mouseup(function(){
+				console.log("h111")
+				if($("#chkSwitch").prop('checked')){
+					console.log("h11111")
+					var selected_textr;
+					var selected_text=window.getSelection && window.getSelection();
+					if (selected_text && selected_text.rangeCount>0)
+						var selected_textr = selected_text.getRangeAt(0);
+					var newm = document.createElement("mark");
+					newm.setAttribute(
+						"style",
+						"background-color: yellow; color: black; display:inline"
+					);
+					newm.style.background = color;
+					newm.className = "highlightedtext";
+					selected_textr.surroundContents(newm);
+				}
+			});
+	$("#stt").mouseup(function(){
+				console.log("h111")
+				if($("#chkSwitch").prop('checked')){
+					console.log("h11111")
+					var selected_textr;
+					var selected_text=window.getSelection && window.getSelection();
+					if (selected_text && selected_text.rangeCount>0)
+						var selected_textr = selected_text.getRangeAt(0);
+					var newm = document.createElement("mark");
+					newm.setAttribute(
+						"style",
+						"background-color: yellow; color: black;"
+					);
+					newm.style.background = color;
+					newm.className = "highlightedtext";
+					selected_textr.surroundContents(newm);
+				}
+			});
+
+	
+	$(document).ready(function(){
+		
+		$("#addhighlightedpart").click(async function(){
+			if (navigator.clipboard) {
+				var hadd="";
+				harray = document.getElementsByClassName("highlightedtext");
+				for (var i=0; i<harray.length ; i++){
+					hadd+=harray[i].innerText;
+					hadd+="\n"
+				}
+				await navigator.clipboard.writeText(hadd);
+				alert("The highlighted text is on your clipboard. You can add them to your notes easily! :)")
+
+			}
+			
+		})
+	});
+
+		$(document).ready(function(){
+		
+		$("#download").click(function(){
+				const turndownService = new TurndownService();
+
+				var hadd="";
+				var link = document.createElement("a");
+				link.download = "notes.md"
+				hadd = tinymce.get("notes").getContent();
+				localStorage.setItem('StoredNotes',hadd);
+				// for (var i=0; i<harray.length ; i++){
+				// 	hadd+=harray[i].innerText;
+				// 	hadd+="\n"
+				// }
+				console.log(hadd);
+				markdown = turndownService.turndown(hadd);
+				var downtext = new Blob([markdown],{
+					type: "text/markdown"
+				});
+				link.href= window.URL.createObjectURL(downtext);
+				link.click();
+			
+		})
+	});
+
+		$("#save").click(function(){
+				
+				var hadd="";
+				hadd = tinymce.get("notes").getContent();
+				console.log(hadd);
+				localStorage.setItem('StoredNotes',hadd);
+			
+		});
+
+
+		$("#new").click(function(){
+				
+			
+				localStorage.clear();
+				tinymce.get("notes").setContent("Enter Notes Here. You can choose to add the highlighted text to your notes too! :)");
+
+		});
+	
+</script>
+</body>
+  </html>

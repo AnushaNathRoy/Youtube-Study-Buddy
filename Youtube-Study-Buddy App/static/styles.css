@@ -1,0 +1,22 @@
+.typewriter{
+	width: 19ch;
+	font-family: monospace;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 2.5em;
+	margin: 0 auto;
+	border-right: 3px transparent;
+	animation: typing 2s steps(40), blink .5s step-end 80s;
+}
+
+@keyframes typing{
+	from{
+		width:0
+	}
+}
+
+@keyframes blink{
+	50%{
+		border-color: solid black
+	}
+}

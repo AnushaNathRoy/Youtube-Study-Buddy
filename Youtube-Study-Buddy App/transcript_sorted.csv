@@ -1,142 +1,158 @@
 text,start,duration,rank
-"which introduces an entirely new class 
-of mathematical statement.",0:03:08,4.25,141
-"creating the first self-referential
-mathematical statement.",0:02:22,3.75,141
-"by adding them as new axioms 
-to an enlarged mathematical system,",0:03:45,4.042,120
-"In Gödel’s paradigm, statements still 
-are either true or false,",0:03:13,4.375,115
-"because there will always be true
-statements we cannot prove.",0:03:38,4.042,115
-"a perfectly complete system 
-using mathematics,",0:03:34,3.333,115
-This makes it impossible to create,0:03:32,2.208,115
-exist in every axiomatic system.,0:03:29,2.917,115
-"Furthermore, Gödel argues these 
-unprovable true statements",0:03:24,4.708,115
-within a given set of axioms.,0:03:22,2.375,115
-"but true statements can either be
-provable or unprovable",0:03:17,4.542,115
-"mathematical statements must be 
-true or false.",0:02:30,3.458,115
-"This revelation is at the heart 
-of Gödel’s Incompleteness Theorem,",0:03:04,4.75,115
-that asserts it cannot be proved.,0:03:00,2.667,115
-"because it means we now have 
-a true equation of mathematics",0:02:56,4.083,115
-"Yet this result is even more surprising,",0:02:54,2.584,115
-"and therefore it must be true that
-“this statement cannot be proved.”",0:02:48,4.875,115
-"This contradiction means that Gödel’s
-statement can’t be false,",0:02:44,4.166,115
-"But if a mathematical statement has
-a proof, then it must be true.",0:02:39,3.958,115
-"Even if you account for these
-unprovable statements",0:03:42,2.667,115
-"that very process introduces new
-unprovably true statements.",0:03:49,5.0,115
-So which is it?,0:02:34,1.5,115
-"No matter how many axioms you add,",0:03:55,2.292,115
-"thanks to Gödel they can embrace 
-the unknown",0:04:52,2.792,115
-"So while mathematicians may have 
-lost some certainty,",0:04:49,3.083,115
-"to identifying provably 
-unprovable statements.",0:04:46,3.166,115
-"And today, some mathematicians dedicate
-their careers",0:04:43,3.084,115
-"inspired key innovations 
-in early computers.",0:04:39,3.208,115
-Knowledge of unprovably true statements,0:04:37,2.625,115
-"Still, Gödel’s theorem opened 
-as many doors as a closed.",0:04:33,3.833,115
-"some began to worry their life's work
-would be impossible to complete.",0:04:28,4.625,115
-"But as more classical problems were proven
-to be unprovably true,",0:04:24,4.417,115
-in the heart of their field.,0:04:22,1.875,115
-"Others still tried to ignore 
-the newly uncovered a hole",0:04:18,3.542,115
-"While most mathematicians accepted this 
-new reality, some fervently debated it.",0:04:13,4.916,115
-be proven or disproven.,0:04:11,2.0,115
-"crushing those who dreamed that every
-mathematical claim would one day",0:04:07,4.125,115
-"This revelation rocked the foundations 
-of the field,",0:04:04,3.041,115
-It’s Gödels all the way down!,0:04:01,2.167,115
-"there will always be unprovably true 
-statements in your system.",0:03:57,4.041,115
-"If it’s false, that means the statement
-does have a proof.",0:02:36,3.542,115
-at the heart of any quest for truth.,0:04:55,2.417,115
-"to prove or disprove mathematical claims
-with total certainty.",0:01:13,4.208,115
-"And he was even less confident
-that mathematics was the right tool",0:01:33,4.25,115
-"undeniable statements 
-about the numbers involved.",0:00:51,2.709,115
-"Every system built on mathematics,",0:00:54,2.291,115
-"from the most complex proof 
-to basic arithmetic,",0:00:57,3.042,115
-is constructed from axioms.,0:01:00,2.125,115
-"And if a statement about numbers is true,",0:01:02,2.75,115
-"mathematicians should be able to confirm
-it with an axiomatic proof.",0:01:05,4.584,115
-"Since ancient Greece, 
-mathematicians used this system",0:01:10,3.208,115
-"However, unlike the ambiguous
-sentence that inspired him,",0:02:27,3.5,115
-"But when Gödel entered the field,",0:01:18,1.917,115
-"some newly uncovered logical paradoxes
-were threatening that certainty.",0:01:20,4.75,115
-"Prominent mathematicians were eager
-to prove",0:01:26,2.625,115
-Gödel himself wasn’t so sure.,0:01:31,2.375,115
-that mathematics had no contradictions.,0:01:28,2.542,115
-to investigate this problem.,0:01:38,1.917,115
-"so that a complex mathematical idea could
-be expressed in a single number.",0:01:58,4.292,115
-"“This statement cannot be proved” 
-as an equation,",0:02:19,3.458,115
-"Through this method, he was able to write:",0:02:16,2.542,115
-"In this way, the coding allowed
-mathematics to talk about itself.",0:02:12,4.125,115
-"This meant that mathematical statements
-written with those numbers",0:02:03,3.583,115
-"were also expressing something about 
-the encoded statements of mathematics.",0:02:07,4.459,115
-"First, he translated mathematical 
-statements and equations into code numbers",0:01:54,4.833,115
-But Gödel had an idea.,0:01:52,1.541,115
-"A mathematical statement is simply 
-true or false.",0:01:48,3.209,115
-"numbers don't typically
-talk about themselves.",0:01:45,3.25,115
-"While it’s relatively easy to create 
-a self-referential paradox with words,",0:01:40,4.833,115
-"But in the early 20th century,
-it led Austrian logician Kurt Gödel",0:00:29,4.666,65
-"If so, that would make
-this statement false.",0:00:12,2.375,65
-"But if it’s false, then the statement 
-is true.",0:00:14,2.291,65
-"By referring to itself directly, this 
-statement creates an unresolvable paradox.",0:00:16,5.292,65
-"So if it’s not true and it’s not false—
-what is it?",0:00:22,3.667,65
-"This question might seem 
-like a silly thought experiment.",0:00:26,2.875,65
-Is that true?,0:00:10,1.292,65
-"to a discovery that would change
-mathematics forever.",0:00:33,3.417,65
-"Gödel’s discovery had to do with 
-the limitations of mathematical proofs.",0:00:37,4.541,65
-"A proof is a logical argument
-that demonstrates",0:00:42,3.166,65
-why a statement about numbers is true.,0:00:45,2.5,65
-"The building blocks of these arguments
-are called axioms—",0:00:48,3.333,65
-"Consider the following sentence:
-“This statement is false.”",0:00:06,3.958,65
+in this video we're gonna focus on,0:00:00,6.98,50
+is the sum of matrix a and B so for add,0:08:01,8.341,50
+the order of the matrix and you also,0:07:31,5.31,50
+know how to identify the elements within,0:07:33,7.041,50
+a matrix now let's focus on add in,0:07:36,6.84,50
+matrices so let's say if we have matrix,0:07:40,7.359,50
+a and it has the numbers two three five,0:07:43,10.07,50
+negative 4 and we have matrix B which is,0:07:47,13.44,50
+seven four negative three and five what,0:07:53,13.3,50
+in those two matrices all we need to do,0:08:06,7.17,50
+columns so that's a three by three,0:07:25,5.85,50
+is add the corresponding elements and by,0:08:09,7.009,50
+the way if you have a two-by-two matrix,0:08:13,4.861,50
+you can only add it to another,0:08:16,5.261,50
+two-by-two matrix the number of rows and,0:08:18,5.25,50
+columns must be the same when added,0:08:21,4.35,50
+matrices or subtract the matrices as,0:08:23,6.599,50
+well so the first element the one in the,0:08:26,6.899,50
+matrix so now you know how to determine,0:07:27,5.459,50
+there's three ropes and it has three,0:07:22,5.731,50
+start with matrix C it has two rows and,0:05:57,8.611,50
+number of rows times the number of,0:06:37,3.74,50
+by 2 matrix now this is a square matrix,0:06:06,7.799,50
+because the number of rows and columns,0:06:11,6.75,50
+are the same in a square all sides are,0:06:13,9.0,50
+the same now for matrix D we have 3 rows,0:06:18,9.781,50
+and 2 columns so this is going to be,0:06:22,12.03,50
+considered a 3 by 2 matrix so the order,0:06:27,9.209,50
+of the matrix is always gonna be the,0:06:34,5.81,50
+now for matrix e it has one row and one,0:06:40,8.349,50
+another score matrix as we can see,0:07:19,5.669,50
+column so because it only has one number,0:06:45,10.6,50
+it's a one by one matrix now for H there,0:06:49,13.53,50
+are two rows and there's four columns so,0:06:56,12.479,50
+this is a two by four matrix and then,0:07:02,10.98,50
+for F we have one row and there's four,0:07:08,6.78,50
+columns so that's a one by four matrix,0:07:13,5.971,50
+and finally the last one gene that's,0:07:15,6.81,50
+first row first column we need to add it,0:08:30,6.06,50
+with element b1 one in the first row in,0:08:33,6.721,50
+the first column they have to match so,0:08:36,6.421,50
+minus 7 which is negative 5 3 minus 4 is,0:10:34,6.96,50
+equal 8 12 20 and negative 16 so what,0:09:59,15.36,50
+about subtracting 2 matrices let's,0:10:11,7.41,50
+subtract matrix a and B so we're gonna,0:10:14,6.6,50
+start with a and then subtracted by B so,0:10:18,6.72,50
+it's gonna be 2 minus 7 3 minus 4 5,0:10:21,8.37,50
+minus negative 3 and then negative 4,0:10:25,8.67,50
+minus 5 so a minus B that's gonna be 2,0:10:29,8.22,50
+negative 1 5 minus negative 3 or 5 plus,0:10:37,6.48,50
+this is gonna be two plus seven and then,0:08:39,7.68,50
+3 that's 8 negative 4 minus 5 is,0:10:41,5.81,50
+negative 9 and so that's the difference,0:10:44,7.53,50
+between the two matrices and that's it,0:10:47,6.64,50
+for this video if you want to find more,0:10:51,4.56,50
+videos on pre-cal feel free to check the,0:10:53,4.29,50
+description section of this video I'm,0:10:56,4.11,50
+gonna pull some links there so thanks,0:10:57,4.85,50
+negative 4 so then for a it's gonna,0:09:54,17.04,50
+times 2 4 times 3 4 times 5 and 4 times,0:09:47,12.0,50
+every element by 4 so it's gonna be 4,0:09:43,10.57,50
+4 times a all you need to do is multiply,0:09:41,6.04,50
+we need to add these two so in the first,0:08:43,5.97,50
+row second column it's gonna be three,0:08:47,4.2,50
+plus four and then we're gonna add those,0:08:48,4.31,50
+two numbers,0:08:51,5.7,50
+so that's gonna be five plus negative,0:08:53,7.39,50
+three and these two numbers which are in,0:08:57,6.03,50
+the second row second column the result,0:09:00,4.92,50
+will remain in that position second row,0:09:03,9.39,50
+second column now 2 plus 7 is 9 3 plus 4,0:09:05,12.36,50
+is 7 5 plus negative 3 is 2 negative 4,0:09:12,9.99,50
+plus 5 is 1 so this is the sum of matrix,0:09:17,7.47,50
+a and B and that's a simple way to add,0:09:22,5.64,50
+two matrices together it's not very,0:09:25,10.35,50
+complicated now let's say if you want to,0:09:28,12.77,50
+multiply matrix a by 4 what will you get,0:09:35,8.09,50
+it has two columns so therefore it's a 2,0:06:01,9.84,50
+represents a square matrix so let's,0:05:54,7.389,50
+matrices now what exactly is a matrix a,0:00:02,7.261,50
+value of 5 now here's another one for,0:01:58,9.421,50
+matrix a and the first letter represents,0:01:34,9.17,50
+the road the second letter is the column,0:01:38,7.32,50
+so this is the first row this is the,0:01:43,5.5,50
+second row this is the first column,0:01:46,6.18,50
+second column third column so this,0:01:49,5.7,50
+element number five is in the second row,0:01:52,5.969,50
+third column so element a 2 3 has a,0:01:54,8.73,50
+you what's element a 1 2 and also,0:02:03,9.21,50
+comma 3 or sometimes it can be written,0:01:26,7.621,50
+element a 2 1 go ahead,0:02:07,7.25,50
+and identify the value of these elements,0:02:12,5.67,50
+so I limit a 1/2 that's in the first row,0:02:15,6.72,50
+second column so that has a value of 7,0:02:18,6.81,50
+element 81 is in the second row first,0:02:21,7.59,50
+column and so that has a value of 6,0:02:25,7.23,50
+let's consider another matrix so let's,0:02:29,5.65,50
+as just element a 2 3 so this is in,0:01:29,9.48,50
+matrix for example what is element 2,0:01:21,8.13,50
+also determine which of these matrices,0:05:50,6.699,50
+this matrix has 2 rows and 3 columns now,0:00:35,14.85,50
+matrix is simply an array of numbers,0:00:07,6.33,50
+organized into rows and columns and,0:00:09,6.09,50
+first let's talk about the order of a,0:00:13,3.04,50
+matrix,0:00:15,5.249,50
+so consider matrix a and let's say it,0:00:16,12.379,50
+has the numbers 2 7 negative 4 6 3 & 5,0:00:21,14.221,50
+what is the order of this matrix now,0:00:28,19.301,50
+the rows are horizontal so this is the,0:00:48,5.09,50
+able to identify a specific element in a,0:01:17,9.239,50
+first row and this is the second row the,0:00:50,6.689,50
+columns are vertical this is the first,0:00:53,8.199,50
+column second third so there's two rows,0:00:56,7.351,50
+and three columns so this is considered,0:01:01,7.471,50
+a two by three matrix the order of the,0:01:04,8.76,50
+matrix lists the rows first and then the,0:01:08,8.64,50
+number of columns now you need to be,0:01:12,8.46,50
+say if we have matrix B and it has the,0:02:32,9.35,50
+numbers 4 3 7 negative 2 5 6 negative,0:02:35,14.64,50
+4/9 negative 3 8 1 and negative 7 what,0:02:41,12.16,50
+negative 6 and then we have matrix E,0:04:52,8.241,50
+I'm gonna give you a list of matrices,0:04:26,4.261,50
+and I want you to identify the order of,0:04:28,6.209,50
+each matrix so let's say if we have,0:04:30,5.879,50
+matrix C and it has the numbers 3,0:04:34,6.18,50
+negative 5 to negative 1,0:04:36,8.88,50
+and then we have matrix D which contains,0:04:40,12.03,50
+the elements for 5 negative 2 7 3 and,0:04:45,11.57,50
+which contains one number which is eight,0:04:57,10.96,50
+is the order of the matrix so let's,0:02:49,6.72,50
+matrix F it's gonna have 7 4 negative 5,0:05:00,19.299,50
+and 11 and let's say matrix G has the,0:05:08,21.48,50
+numbers 3 1 7 2 6 negative for 9:03 so,0:05:20,15.481,50
+identify the order of each matrix go,0:05:29,8.22,50
+ahead and try that let me just give you,0:05:35,7.979,50
+one more matrix H which is gonna be 2 1,0:05:37,12.921,50
+7 negative 3 6 negative 2 5 and 4 and,0:05:43,10.521,50
+going to do at this point,0:04:25,2.49,50
+any element in the matrix so what I'm,0:04:22,4.53,50
+of the matrix and the value of every or,0:04:18,6.84,50
+need to be able to determine the order,0:04:16,5.879,50
+start with the rows this is Row 1 Row 2,0:02:53,8.01,50
+Row 3 and then the columns column 1 2 3,0:02:56,12.47,50
+4 so the order of matrix being it's a 3,0:03:01,13.58,50
+by 4 matrix it has 3 rows and 4 columns,0:03:08,6.57,50
+now identify elements B 1 1 B 2 3 B 1 4,0:03:17,22.901,50
+and B 3 4 go ahead and identify these,0:03:32,11.25,50
+four elements so this one is in the,0:03:40,6.06,50
+first row first column so that has a,0:03:43,7.95,50
+value of 4 element B 2 3 that is in the,0:03:46,9.96,50
+second row third column so that has a,0:03:51,9.39,50
+value of negative 4 and then element B,0:03:56,9.75,50
+run 4 is in the first row 4th column so,0:04:00,8.58,50
+that's equal to negative 2 and element B,0:04:05,7.079,50
+3 4 is in the third row fourth column so,0:04:09,6.84,50
+it has the value of a negative 7 so you,0:04:12,5.821,50
+again for watching,0:11:00,2.42,50
