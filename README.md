@@ -59,8 +59,11 @@ Enter search query to search in the video. It can be entered later too.
 
 #### Navbar Options
 **Home button** - Allows you to navigate back to homepage.
+
 **Transcript** - Allows you to view the entire transcript at once.
+
 **Time-Stamped Transcript** - It provides the transcipt time-stamped. Clicking on the particular time-stamp will play the video at the exact time-stamp.
+
 **Search** - This allows you to search for any content in transcript and provides a list of relevant searches. You don't need to type the exact sentence, the search feauture will take care of it and give you all the relevant choices.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/navbar.png)
@@ -68,9 +71,13 @@ Enter search query to search in the video. It can be entered later too.
 
 #### Study Mode
 **Highlight Mode** - It is a toggle button. On switching on the toggle button you will be given an option to enter the hex code of the highlight color that you like. Not entering a hex value will use the default yellow highlight.
+
 **Get Highlighted Text** - On clicking this button all the higlighted text will be copied to your clipboard. You can now easily paste this in the notes editor and make notes easily. 
+
 **Save Notes** - Saving notes will save your notes across various videos. You can open different videos and edit on the same notes. 
+
 **New Note**- This will delete your notes and start a new fresh and clean note.
+
 **Download Notes (MarkDown)** - This will download a markdown of the notes you made.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/studymode.png)
