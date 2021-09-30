@@ -82,11 +82,13 @@ Enter search query to search in the video. It can be entered later too.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/studymode.png)
 
+
 ---
 
 #### Notes Editor
 
 You can use this to make and edit your notes while studying. The are options to make tables, bold and highlight text and many more!
+
 
 ---
 
