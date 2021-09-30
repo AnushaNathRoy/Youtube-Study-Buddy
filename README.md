@@ -81,6 +81,7 @@ Enter search query to search in the video. It can be entered later too.
 **Download Notes (MarkDown)** - This will download a markdown of the notes you made.
 
 ![alt text](https://github.com/AnushaNathRoy/Youtube-Study-Buddy/blob/main/readmeImages/studymode.png)
+
 ---
 
 #### Notes Editor
